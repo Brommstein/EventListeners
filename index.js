@@ -10,11 +10,12 @@ function main() {
     console.log(list);
   });
 }
-$('ul').on('click', '.shopping-item-toggle', function(event){
+
+$('ul').on('click', '.shopping-item-toggle', function(){
   $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
 });
 
-$('ul').on('click', '.shopping-item-delete', function(event){
+$('ul').on('click', '.shopping-item-delete', function(){
   $(this).closest('li').remove();
 });
 
